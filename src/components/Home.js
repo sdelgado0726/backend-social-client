@@ -12,7 +12,8 @@ function Home() {
   return (
     <>
       <Navbar className="Navbar">
-        <Navbar.Brand className="logo" href='/'>
+        <Navbar.Brand className="logo">
+          <Link to="/" className="nav-link">
             <img
               alt=""
               src={"https://mir-s3-cdn-cf.behance.net/projects/404/bb931455379241.Y3JvcCwxOTk5LDE1NjQsMCw0.png"}
@@ -21,6 +22,7 @@ function Home() {
               style={{ padding: "5px" }}
             />{" "}
             Blabber
+          </Link>
           </Navbar.Brand>
         <Container className="justify-content-end">
             {loggedInUser.userId && <Link className="nav-link" style={{paddingRight: '15px', color: "#A2A3BB"}} to={`/profile/${loggedInUser.userId}`}>Welcome {loggedInUser.firstName}!</Link>}

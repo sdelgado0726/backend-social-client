@@ -78,7 +78,7 @@ function PostList() {
                     </div>
                     <div className="d-flex w-100 justify-content-end">
                       {loggedInUser && loggedInUser.userId === p.userId && <Link to={`/edit/${p.postId}`} className="btn btn-primary text me-2" style={{backgroundColor: '#A2A3BB', color: '#000807', marginBottom: '5px', border: '#A2A3BB'}}>Edit</Link>}{' '}
-                      {loggedInUser && loggedInUser.userId === p.userId && <Button style={{backgroundColor: '#000807', color: '#A2A3BB', marginBottom: '5px', border: '#000807'}} onClick={handleDelete.bind(this, p.postId)}>Delete Coffee</Button>}{' '}
+                      {loggedInUser && loggedInUser.userId === p.userId && <Button style={{backgroundColor: '#000807', color: '#A2A3BB', marginBottom: '5px', border: '#000807'}} onClick={handleDelete.bind(this, p.postId)}>Delete</Button>}{' '}
                     </div>
                   </ListGroup.Item>
                 </ListGroup>
